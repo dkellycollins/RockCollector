@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.mdl-button + .mdl-button {
+    margin-left: 1em;
+}
