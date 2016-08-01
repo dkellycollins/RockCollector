@@ -1,2 +1,8 @@
 <h1>Listing <%= @articles.length %> articles</h1>
-<% render @articles %>
+<div class="mdl-grid">
+  <% @articles.each do |article| %>
+      <div class="mdl-cell mdl-cell--4-col">
+        <%= render partial: 'article', locals: {article: article} %>
+      </div>
+  <% end %>
+</div>

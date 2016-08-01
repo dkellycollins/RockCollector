@@ -1,3 +1,31 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.article-card.mdl-card {
+  width: 100%;
+  min-height: 256px;
+  background: #3E4EB8;
+}
+.article-card > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.article-card > .mdl-card__title {
+  align-items: flex-start;
+}
+.article-card > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.article-card > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.article-card > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.article-card > .mdl-card__title,
+.article-card > .mdl-card__actions,
+.article-card > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
