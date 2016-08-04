@@ -1,6 +1,8 @@
+##
+# Represents an article.
 class Article < ApplicationRecord
 
-  has_many :comments, dependent: :destroy
+  belongs_to :article_collection
 
   validates :title, presence: true,
                     length: {minimum: 1, maximum: 256}
